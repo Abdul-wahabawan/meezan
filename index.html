@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meezan Builders | House Construction Company in Faisalabad | Grey Structure to Turnkey</title>
-<meta name="description" content="Meezan Builders is a trusted house construction company in Faisalabad with 400+ homes delivered. Grey structure, finishing & fully furnished turnkey houses, 5 to 20 marla. Transparent pricing, zero advance risk, on-time handover. WhatsApp +92 300 4430656">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/favicon%20(1).png">
-<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/favicon%20(1).png">
+<meta name="description" content="Meezan Builders is a trusted house construction company in Faisalabad with 400+ homes delivered. Grey structure, finishing & fully furnished turnkey houses, 5 to 20 marla. Transparent pricing, zero advance risk, on-time handover. WhatsApp +92 324 2000304">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/favicon=2.png">
+<link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/favicon=2.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Expanded:wght@600;700;800&display=swap" rel="stylesheet">
@@ -54,24 +54,27 @@ footer .brand .logo{height:46px}
 .hero p.sub{animation-delay:.36s}
 .hero-ctas{animation-delay:.5s}
 .hero-stats{animation-delay:.64s}
-.hero img.bg{animation:heroZoom 8s ease-out forwards}
-@keyframes heroZoom{from{transform:scale(1.08)}to{transform:scale(1)}}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
-.nav-links{display:flex;gap:28px;font-size:.92rem;font-weight:500}
+.nav-links{display:flex;gap:32px;font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.nav-links a{position:relative;padding:6px 0;color:var(--ink);transition:color .2s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
 .nav-links a:hover{color:var(--emerald)}
+.nav-links a:hover::after{transform:scaleX(1)}
+header.scrolled{box-shadow:0 6px 24px rgba(16,32,26,.08)}
 .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;border-radius:999px;padding:12px 22px;font-size:.95rem;transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;border:none}
 .btn:hover{transform:translateY(-1px)}
 .btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.35)}
-.btn-outline{border:1.5px solid rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-outline{border:1.5px solid rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06);backdrop-filter:blur(4px)}
+.btn-outline:hover{background:#fff;color:var(--emerald-deep)}
 .wa-ic{width:19px;height:19px;flex:0 0 auto}
 .nav .btn-wa{padding:10px 18px}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero picture,.hero img.bg{position:absolute;inset:0;width:100%;height:100%}
-.hero img.bg{object-fit:cover;object-position:center}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--emerald-deep)}
+.hero picture{position:absolute;inset:0;display:block}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,32,22,.25) 0%,rgba(9,32,22,.42) 45%,rgba(7,24,17,.88) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%;padding:110px 0 64px}
 .hero .kicker{font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;color:var(--brass-soft);margin-bottom:18px;display:flex;align-items:center;gap:12px}
@@ -129,7 +132,6 @@ footer .brand .logo{height:46px}
 .gallery figure{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:var(--stone)}
 .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .gallery figure:hover img{transform:scale(1.05)}
-.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 14px;background:linear-gradient(180deg,transparent,rgba(9,32,22,.85));color:#fff;font-size:.85rem;font-weight:600;letter-spacing:.04em}
 .gallery figure.tall{grid-row:span 2;aspect-ratio:auto}
 
 /* ---------- Why us ---------- */
@@ -147,7 +149,10 @@ footer .brand .logo{height:46px}
 .cta{background:var(--emerald-deep);color:#fff;text-align:center}
 .cta h2{color:#fff;max-width:24ch;margin-left:auto;margin-right:auto}
 .cta p{color:rgba(255,255,255,.8);max-width:58ch;margin:0 auto 30px}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .cta .btn-wa{font-size:1.05rem;padding:15px 30px}
+.btn-mail{border:1.5px solid rgba(255,255,255,.5);color:#fff;background:transparent;font-size:1rem;padding:14px 26px}
+.btn-mail:hover{background:#fff;color:var(--emerald-deep)}
 .cta .phone{display:block;margin-top:18px;font-family:var(--display);font-weight:700;font-size:1.2rem;letter-spacing:.04em;color:var(--brass-soft)}
 
 /* ---------- Footer ---------- */
@@ -168,20 +173,57 @@ footer{background:#07110C;color:rgba(255,255,255,.72);padding:44px 0 30px;font-s
   .steps{grid-template-columns:1fr 1fr}
   .gallery{grid-template-columns:1fr 1fr}
   .why-grid{grid-template-columns:1fr;gap:36px}
+  .trustbar .wrap{justify-content:flex-start;row-gap:10px}
 }
 @media (max-width:720px){
   .section{padding:64px 0}
   .nav-links{display:none}
   .nav-links.open{display:none}
   .nav .btn-wa span.t{display:inline}
-  .hero{min-height:92vh}
-  .hero-stats div{border-right:none;margin-right:0;padding-right:0;width:50%}
+  .hero{min-height:100vh;min-height:100svh;min-height:100dvh;align-items:flex-end}
+  .hero-inner{padding:calc(70px + env(safe-area-inset-top,0px)) 60px calc(24px + env(safe-area-inset-bottom,0px));max-width:100%}
+  .hero .kicker{font-size:clamp(.6rem,2.6vw,.7rem);margin-bottom:10px}
+  .hero h1{font-size:clamp(1.75rem,8.4vw,2.5rem)}
+  .hero p.sub{font-size:clamp(.86rem,3.8vw,.98rem);margin:12px 0 18px}
+  .hero-ctas{gap:10px}
+  .hero-ctas .btn{width:100%;justify-content:center;padding:13px 20px;font-size:clamp(.9rem,3.9vw,.98rem)}
+  .hero-stats{margin-top:18px;padding-top:0}
+  .hero-stats div{border-right:none;margin-right:0;padding:10px 0 0;width:50%}
+  .hero-stats b{font-size:clamp(1.15rem,5vw,1.4rem)}
+  .hero-stats span{font-size:clamp(.6rem,2.6vw,.7rem);letter-spacing:.08em}
   .svc-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr}
   .gallery figure.tall{grid-row:auto;aspect-ratio:4/3}
   .estimate{padding:34px 24px}
+  .estimate h2{font-size:1.55rem}
+  .marla-row{gap:10px}
+  .marla{flex:1 1 calc(50% - 5px);padding:12px 10px;text-align:center}
+  .estimate .btn-wa{width:100%;justify-content:center}
+  .trustbar .wrap{flex-direction:column;align-items:flex-start;gap:8px}
+  .styles-row{gap:8px}
+  .chip{padding:7px 14px;font-size:.84rem}
+  .cta-actions{flex-direction:column;align-items:stretch}
+  .cta-actions .btn{justify-content:center}
+  .btn-mail{font-size:.9rem;word-break:break-all}
+  .why-img{box-shadow:0 14px 34px rgba(16,32,26,.15)}
+  footer .brand .logo{height:40px}
   .foot{flex-direction:column}
+  .foot-bottom{flex-direction:column;gap:6px}
+}
+@media (max-width:380px){
+  .wrap{padding:0 18px}
+  .hero-inner{padding-left:60px;padding-right:60px}
+  .hero .kicker{letter-spacing:.18em}
+  .hero h1{font-size:1.62rem}
+  .hero p.sub{margin:10px 0 14px}
+  .hero-stats b{font-size:1.05rem}
+  .nav .btn-wa{padding:9px 14px;font-size:.85rem}
+  .brand .logo{height:34px}
+}
+@media (max-height:660px) and (max-width:720px){
+  .hero{min-height:auto}
+  .hero-inner{padding:86px 60px 26px}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important;scroll-behavior:auto}
@@ -194,7 +236,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
 <header>
   <div class="wrap nav">
     <a href="#top" class="brand" aria-label="Meezan Builders home">
-      <img class="logo" src="https://github.com/Abdul-wahabawan/meezan/blob/main/navbar%20logo.png?raw=true" alt="Meezan Builders">
+      <img class="logo" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/n-logo.png" alt="Meezan Builders">
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Main navigation">
       <a href="#services">Services</a>
@@ -204,19 +246,18 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
       <a href="#why">Why Us</a>
     </nav>
     <div style="display:flex;align-items:center;gap:10px">
-      <a class="btn btn-wa" href="https://wa.me/923004430656?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20a%20free%20estimate%20for%20my%20house%20construction%20in%20Faisalabad." target="_blank" rel="noopener">
+      <a class="btn btn-wa" href="https://wa.me/923242000304?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20a%20free%20estimate%20for%20my%20house%20construction%20in%20Faisalabad." target="_blank" rel="noopener">
         <svg class="wa-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.87-9.88 9.87zm8.4-18.28A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
         <span class="t">WhatsApp Us</span>
       </a>
     </div>
   </div>
 </header>
-
 <main id="top">
 <!-- HERO -->
 <section class="hero">
   <picture>
-    <source media="(max-width:720px)" srcset="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Luxurious-10Marla-Modern-Designer-House-Available-For-Sale-at-Prime-of-Phase-6-at-70ft-Wide-Road.jpeg">
+    <source media="(max-width:720px)" srcset="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_v7s9g8v7s9g8v7s9.png">
     <img class="bg" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/website-hero.png" alt="Modern designer house built by Meezan Builders in Faisalabad" fetchpriority="high">
   </picture>
   <div class="wrap hero-inner">
@@ -224,7 +265,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
     <h1>Building Tomorrow, <em>Together.</em></h1>
     <p class="sub">Meezan Builders delivers 5 to 20 marla homes across Faisalabad, from grey structure to fully furnished turnkey handover. Transparent pricing, milestone-based payments, and a written handover date on every project.</p>
     <div class="hero-ctas">
-      <a class="btn btn-wa" href="https://wa.me/923004430656?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20a%20free%20estimate%20for%20my%20house%20construction%20in%20Faisalabad." target="_blank" rel="noopener">
+      <a class="btn btn-wa" href="https://wa.me/923242000304?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20a%20free%20estimate%20for%20my%20house%20construction%20in%20Faisalabad." target="_blank" rel="noopener">
         <svg class="wa-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.87-9.88 9.87zm8.4-18.28A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
         Get a Free Estimate
       </a>
@@ -249,8 +290,29 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
   </div>
 </div>
 
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal">Our Work</p>
+    <h2 class="reveal d1">Built in Faisalabad. Delivered on time.</h2>
+    <p class="lede">A selection from more than 400 homes delivered to families across the city. Modern elevations, quality interiors, and every project handed over on schedule.</p>
+    <div class="gallery">
+      <figure class="tall reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_i7kt1gi7kt1gi7kt.png" alt="Modern house elevation by Meezan Builders"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_eon5r8eon5r8eon5.png" alt="Contemporary designer house"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Luxury%20Villa.png" alt="Luxury villa exterior"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/10%20Marla%20Designer%20Home.png" alt="10 marla modern designer house"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/maxresdefault%20(10).jpg" alt="Finished house project"></figure>
+      <figure class="tall reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Minimalist%20Design.png" alt="Minimalist house design"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_v7s9g8v7s9g8v7s9.png" alt="Modern residential construction"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_r8p6hzr8p6hzr8p6.png" alt="Designer home front elevation"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_qumi0vqumi0vqumi.png" alt="Luxury home construction"></figure>
+      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_449iou449iou449i.png" alt="Completed house project by Meezan Builders"></figure>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICES -->
-<section class="section" id="services">
+<section class="section tint" id="services">
   <div class="wrap">
     <p class="eyebrow reveal">Our Services</p>
     <h2 class="reveal d1">One contractor for every stage of your home</h2>
@@ -303,7 +365,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
 </section>
 
 <!-- ESTIMATE STRIP -->
-<section class="section tint" id="estimate">
+<section class="section" id="estimate">
   <div class="wrap">
     <div class="estimate reveal">
       <p class="eyebrow" style="color:var(--brass-soft)">Free Estimate</p>
@@ -315,7 +377,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
         <button class="marla active" data-size="10 Marla">10 Marla<small>Most popular</small></button>
         <button class="marla" data-size="1 Kanal (20 Marla)">1 Kanal<small>Luxury villa</small></button>
       </div>
-      <a class="btn btn-wa" id="estimateBtn" href="https://wa.me/923004430656?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20a%20free%20construction%20estimate%20for%20my%2010%20Marla%20plot%20in%20Faisalabad." target="_blank" rel="noopener">
+      <a class="btn btn-wa" id="estimateBtn" href="https://wa.me/923242000304?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20a%20free%20construction%20estimate%20for%20my%2010%20Marla%20plot%20in%20Faisalabad." target="_blank" rel="noopener">
         <svg class="wa-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.87-9.88 9.87zm8.4-18.28A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
         Get My 10 Marla Estimate
       </a>
@@ -337,26 +399,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="section tint" id="projects">
-  <div class="wrap">
-    <p class="eyebrow reveal">Our Work</p>
-    <h2 class="reveal d1">Built in Faisalabad. Delivered on time.</h2>
-    <p class="lede">A selection from more than 400 homes delivered to families across the city. Modern elevations, quality interiors, and every project handed over on schedule.</p>
-    <div class="gallery">
-      <figure class="tall reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_449iou449iou449i.png" alt="Modern house elevation by Meezan Builders"><figcaption>Modern Elevation</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_eon5r8eon5r8eon5.png" alt="Contemporary designer house"><figcaption>Contemporary Design</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/e514c2cb6dedf59afe882700ccc652c9.jpg" alt="Luxury villa exterior"><figcaption>Luxury Villa</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Luxurious-10Marla-Modern-Designer-House-Available-For-Sale-at-Prime-of-Phase-6-at-70ft-Wide-Road.jpeg" alt="10 marla modern designer house"><figcaption>10 Marla Designer Home</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/maxresdefault%20(10).jpg" alt="Finished house project"><figcaption>Turnkey Project</figcaption></figure>
-      <figure class="tall reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_v95ijtv95ijtv95i.png" alt="Minimalist house design"><figcaption>Minimalist Design</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_v7s9g8v7s9g8v7s9.png" alt="Modern residential construction"><figcaption>Residential Build</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_r8p6hzr8p6hzr8p6.png" alt="Designer home front elevation"><figcaption>Front Elevation</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_qumi0vqumi0vqumi.png" alt="Luxury home construction"><figcaption>Luxury Interior Finish</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/Gemini_Generated_Image_i7kt1gi7kt1gi7kt.png" alt="Completed house project by Meezan Builders"><figcaption>Completed Handover</figcaption></figure>
-    </div>
-  </div>
-</section>
 
 <!-- WHY US -->
 <section class="section" id="why">
@@ -395,11 +437,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
     <p class="eyebrow" style="justify-content:center;color:var(--brass-soft)">Get Started</p>
     <h2 class="reveal">Ready to build your dream house?</h2>
     <p>Message us on WhatsApp for a free estimate, 3D design and a clear construction plan. Serving all of Faisalabad.</p>
-    <a class="btn btn-wa" href="https://wa.me/923004430656?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20to%20discuss%20my%20house%20construction%20project%20in%20Faisalabad." target="_blank" rel="noopener">
+    <div class="cta-actions">
+    <a class="btn btn-wa" href="https://wa.me/923242000304?text=Hello%20Meezan%20Builders%2C%20I%20would%20like%20to%20discuss%20my%20house%20construction%20project%20in%20Faisalabad." target="_blank" rel="noopener">
       <svg class="wa-ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.87-9.88 9.87zm8.4-18.28A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
       Chat on WhatsApp
     </a>
-    <a class="phone" href="tel:+923004430656">Call: +92 300 4430656</a>
+    <a class="btn btn-mail" href="mailto:Buildersmeezan@gmail.com">
+      <svg class="wa-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+      Buildersmeezan@gmail.com
+    </a>
+    </div>
   </div>
 </section>
 </main>
@@ -408,7 +455,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
   <div class="wrap">
     <div class="foot">
       <a href="#top" class="brand">
-        <img class="logo" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/logo%20(1).png" alt="Meezan Builders">
+        <img class="logo" src="https://raw.githubusercontent.com/Abdul-wahabawan/meezan/main/footer%20logo.png" alt="Meezan Builders">
       </a>
       <nav class="foot-links" aria-label="Footer navigation">
         <a href="#services">Services</a>
@@ -416,7 +463,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
         <a href="#process">Process</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="https://www.instagram.com/meezan.builders" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.instagram.com/meezan.builders/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/meezanbuilders" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:Buildersmeezan@gmail.com">Email</a>
       </nav>
     </div>
     <div class="foot-bottom">
@@ -426,7 +475,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offs
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/923004430656?text=Hello%20Meezan%20Builders" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="wa-float" href="https://wa.me/923242000304?text=Hello%20Meezan%20Builders" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.44 4.43-9.87 9.89-9.87a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.87-9.88 9.87zm8.4-18.28A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
 </a>
 
@@ -440,10 +489,16 @@ marlaBtns.forEach(btn => {
     btn.classList.add('active');
     const size = btn.dataset.size;
     const msg = encodeURIComponent(`Hello Meezan Builders, I would like a free construction estimate for my ${size} plot in Faisalabad.`);
-    estimateBtn.href = `https://wa.me/923004430656?text=${msg}`;
+    estimateBtn.href = `https://wa.me/923242000304?text=${msg}`;
     estimateBtn.lastChild.textContent = ` Get My ${size.split(' (')[0]} Estimate`;
   });
 });
+
+// Navbar shadow on scroll
+const hdr = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  hdr.classList.toggle('scrolled', window.scrollY > 10);
+}, { passive: true });
 
 // Scroll-reveal animations
 const revealEls = document.querySelectorAll('.reveal');
